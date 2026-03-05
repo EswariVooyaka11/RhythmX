@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RhythmX</title>
+<link rel="stylesheet" href="music.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="loginOverlay">
+<div id="loginBox">
+<h3>Login</h3>
+<input id="username" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<button onclick="register()">Register</button>
+<p id="msg"></p>
+</div>
+</div>
+
+<!-- NAV -->
+<nav>
+<h2>RhythmX</h2>
+
+<ul>
+<li onclick="scrollToSection('home')">Home</li>
+<li onclick="scrollToSection('about')">About</li>
+<li onclick="scrollToSection('artists')">Artists</li>
+<li onclick="scrollToSection('wishlist')">Favorites</li>
+<li onclick="scrollToSection('contact')">Contact</li>
+<li onclick="logout()">Logout</li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<h1>Feel The Music</h1>
+<p>Enjoy Unlimited Songs Anytime</p>
+
+<button onclick="scrollToSection('artists')">
+Get Started
+</button>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+<img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+
+<div>
+<h2>About Us</h2>
+<p>
+MusicWorld helps users discover music, explore artists,
+and save favorite songs.
+</p>
+</div>
+
+</section>
+
+<!-- ARTISTS -->
+
+<section class="section" id="artists">
+
+<h2>Artists</h2>
+
+<div class="artists">
+
+<div class="card" onclick="showSongs('rahman')">
+<img src="https://i0.wp.com/rahmaniac.com/wp-content/uploads/2017/06/AR_Gallery.jpg">
+<h3>AR Rahman</h3>
+</div>
+
+<div class="card" onclick="showSongs('karthik')">
+<img src="https://www.tamil2lyrics.com/wp-content/uploads/2021/08/singer-karthik.jpg">
+<h3>Karthik</h3>
+</div>
+
+<div class="card" onclick="showSongs('shreya')">
+<img src="https://www.bollywoodhungama.com/wp-content/uploads/2025/02/Shreya_Ghoshal_Tour.jpg">
+<h3>Shreya Ghoshal</h3>
+</div>
+
+</div>
+
+<h3 style="margin-top:30px">Songs</h3>
+
+<div id="songsContainer"></div>
+
+</section>
+
+<!-- FAVORITES -->
+
+<section class="section" id="wishlist">
+
+<h2>My Favorite Songs</h2>
+
+<div id="wishlistContainer"></div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact</h2>
+
+<p>Instagram | WhatsApp | Facebook</p>
+
+</section>
+
+<footer>
+© 2026 RhythmX | Discover Music Everywhere
+</footer>
+
+<script src="music.js"></script>
+</body>
+</html>
